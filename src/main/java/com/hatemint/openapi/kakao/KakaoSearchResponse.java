@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -19,7 +20,7 @@ import java.util.stream.Collectors;
 public class KakaoSearchResponse implements SearchResponse<Place> {
 
     private Meta meta;
-    private List<Document> documents;
+    private List<Document> documents = new ArrayList<>();
 
     @Override
     public List<Place> convertToEntity() {
