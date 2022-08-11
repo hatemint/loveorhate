@@ -13,3 +13,11 @@ naver:
     url: https://openapi.naver.com
     client_id: rn41XSJp_Pak11nxfZBO
     client_secret: h1HoMFP5Nu
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 5000
+        read-timeout: 5000
+        logger-level: full
